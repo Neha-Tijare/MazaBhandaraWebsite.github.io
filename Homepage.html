@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maza Bhandara</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: hsl(0, 5%, 80%);
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            background-color: #444;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 20px;
+            display: block;
+        }
+
+        nav ul li a:hover {
+            background-color: #555;
+        }
+
+        main {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .gallery img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .section {
+            display: none;
+        }
+
+        .active {
+            display: block;
+            border-color:crimson;
+            border-style: dotted;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Maza Bhandara</h1>
+        <nav>
+            <ul>
+                <li><a href="#home" onclick="showSection('home')">Home</a></li>
+                <li><a href="#tourist-places" onclick="showSection('tourist-places')">Tourist Places</a></li>
+                <li><a href="#rivers" onclick="showSection('rivers')">Rivers</a></li>
+                <li><a href="#map" onclick="showSection('map')">Map</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Home Page -->
+        <section id="home" class="section active">
+            <h2>Welcome to Bhandara</h2>
+            <p>Explore the beauty of Bhandara through stunning images.</p>
+            
+            <img src="image1.jpeg" alt="Bhandara1" height="300px" width="300px">
+            <img src="image2.jpeg" alt="Bhandara2" height="300px" width="300px">
+            <img src="image3.jpeg" alt="Bhandara3" height="300px" width="300px">
+            <img src="image4.jpg" alt="Bhandara4" height="300px" width="300px">
+            <img src="image5.jpg" alt="Bhandara5" height="300px" width="300px">
+            <img src="image6.jpeg" alt="Bhandara6" height="300px" width="300px">
+            <img src="image7.jpeg" alt="Bhandara7" height="300px" width="300px">
+            <img src="image8.jpeg" alt="Bhandara8" height="300px" width="300px">
+            <img src="image9.jpeg" alt="Bhandara9" height="300px" width="300px">
+            <img src="image10.jpeg" alt="Bhandara10" height="300px" width="300px">
+            <img src="image11.jpeg" alt="Bhandara11" height="300px" width="300px">
+            <img src="image12.jpeg" alt="Bhandara12" height="300px" width="300px">
+            <img src="image13.jpeg" alt="Bhandara13" height="300px" width="300px">
+            <img src="image14.jpeg" alt="Bhandara14" height="300px" width="300px">
+            
+            <iframe width="800" height="400" src="https://www.youtube.com/embed/zjyTAbpi-GM?si=WtrNlRJPAhhXOL8l" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe><br>
+        </section>
+
+        <section id="tourist-places" class="section">
+            <h2>Bhandaras Tourist Places</h2>
+            <div class="gallery">
+                
+                    <img src="imageT1.jpeg" alt="Tourist Place 1" height="300px" width="300px">
+                    <img src="imageT2.jpeg" alt="Tourist Place 2" height="300px" width="300px">
+                    <img src="imageT3.jpeg" alt="Tourist Place 3" height="300px" width="300px">
+                    <img src="imageT4.jpeg" alt="Tourist Place 4" height="300px" width="300px">
+                    <img src="imageT4.jpeg" alt="Tourist Place 4" height="300px" width="300px">
+        
+                    <img src="imageT5.jpeg" alt="Tourist Place 4" height="300px" width="300px">
+        
+                    <img src="imageT6.jpeg" alt="Tourist Place 4" height="300px" width="300px">
+        
+                    <img src="imageT7.jpeg" alt="Tourist Place 4" height="300px" width="300px">
+                    <img src="imageT8.jpeg" alt="Tourist Place 4" height="300px" width="300px">
+                    <img src="imageT9.jpeg" alt="Tourist Place 4" height="300px" width="300px">
+                </a>
+                
+            </div>
+        </section>
+        <!-- Rivers Page -->
+<section id="rivers" class="section">
+    <h2>One of the Big River of Bhandara's</h2>
+    <div class="river">
+            <h3>Vainganga River</h3>
+            <img src="river1.jpeg" height="300px, width=300px">
+            <a href="https://www.google.com/search?sca_esv=5b98f86993edd4ca&sxsrf=ADLYWIIJpTbFl0Pbd0IsHKMv2gKc8rB4Ng:1721586511111&q=Bhandara+city+river&source=lnms&fbs=AEQNm0COtQ6qE5snXClm_cWqGTLX_jMP5V4l2v9LemFtanifXVoSDc4z6nO25TAUUgCi_PqCbebMxH2l70BIpVN1tqaoTHU6lwbH9DsAcppZt6T9NYgJhqN-CxUP6v-KgdRHi_aRy5fEF9y2ip7sLwrQOdVrPWz7g0rDeDpKrQmZgy69qnSLINuAz2_HdWCssNNrsaeTWfyoY8KICeLZKZDkB3w3c091Lg&sa=X&ved=2ahUKEwirosfD4biHAxWeSGcHHScNCtoQ0pQJegQIEhAB&biw=1229&bih=584&dpr=1.56">Read more</a>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/2-xbq6zf93Y?si=Exwfdb7N3BYZcvp9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+    </div>
+</section>
+
+<!-- Map Page -->
+        <section id="map" class="section">
+            <h2> Map of Bhandara</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29763.05056440296!2d79.65335189999999!3d21.1770058!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a2b38aba7629c35%3A0xeb5bb18c18ae8f17!2sBhandara%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1721587358359!5m2!1sen!2sin" width="800" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+    </main>
+
+    <footer>
+        <p> 2024 Maza Bhandara. All rights reserved.</p>
+    </footer>
+    <script>
+        function showSection(id) {
+            var sections = document.querySelectorAll('.section');
+            sections.forEach(function(section) {
+                section.classList.remove('active');
+            });
+            document.getElementById(id).classList.add('active');
+        }
+    </script>
+    
+    </body>
+    </html>
